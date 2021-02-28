@@ -11,7 +11,8 @@ from threading import Timer
 
 
 cg = CoinGeckoAPI()
-bot = Bot("1609172726:AAEBLzOeMgGv75lolwM82kcV8Qtp0D9Wl1I")
+#Insert Bot Token
+bot = Bot("XXXXXXXXXXXXXXXXXXXXXX")
 counter=0
         
 
@@ -56,8 +57,8 @@ def fetch():
 
     #Telegram Bot set-up
     
-
-    updater=Updater("1609172726:AAEBLzOeMgGv75lolwM82kcV8Qtp0D9Wl1I", use_context=True)
+    #Insert Bot token
+    updater=Updater("XXXXXXXXXXXXXXXXXXX", use_context=True)
     dispatcher=updater.dispatcher
 
     def sch_metrics(update:Update, context:CallbackContext):
